@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 import { Star } from 'phosphor-react'
 import Slider from 'react-slick'
 
 const Home: NextPage = () => {
+  const router = useRouter()
+
   const settingsFirst = {
     dots: true,
     infinite: true,
@@ -81,27 +84,31 @@ const Home: NextPage = () => {
             <div className="container mx-auto">
               <div className="grid grid-cols-3 gap-5">
                 <div className="bg-gray-700 p-7 rounded-lg">
-                  <h1 className="font-bold text-2xl text-red-500">Título</h1>
+                  <h1 className="font-bold text-2xl text-red-500">
+                    Operações que geram resultados diários
+                  </h1>
                   <p className="text-lg text-gray-200">
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica e
-                    de impressão. O Lorem Ipsum tem vindo a ser o texto padrão
-                    usado por esta
+                    Usando o BlazeNaAlta você consegue identificar os melhores
+                    momentos para apostar, assim você pode até duplicar seu
+                    dinheiro.
                   </p>
                 </div>
                 <div className="bg-gray-700 p-7 rounded-lg">
-                  <h1 className="font-bold text-2xl text-red-500">Título</h1>
+                  <h1 className="font-bold text-2xl text-red-500">
+                    Lucre no mercado mesmo sendo iniciante
+                  </h1>
                   <p className="text-lg text-gray-200">
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica e
-                    de impressão. O Lorem Ipsum tem vindo a ser o texto padrão
-                    usado por esta
+                    Você não precisa entender do mercado Basta apenas copiar
+                    nossos sinais gratuitos da nossa inteligência artificial.
                   </p>
                 </div>
                 <div className="bg-gray-700 p-7 rounded-lg">
-                  <h1 className="font-bold text-2xl text-red-500">Título</h1>
+                  <h1 className="font-bold text-2xl text-red-500">
+                    Faça as operações de onde quiser, apenas com o celular
+                  </h1>
                   <p className="text-lg text-gray-200">
-                    O Lorem Ipsum é um texto modelo da indústria tipográfica e
-                    de impressão. O Lorem Ipsum tem vindo a ser o texto padrão
-                    usado por esta
+                    Apenas com o seu celular em mãos você consegue ter acesso
+                    aos melhores momentos para realizar sua aposta.
                   </p>
                 </div>
               </div>
@@ -124,11 +131,16 @@ const Home: NextPage = () => {
                   <h1 className="text-2xl font-bold text-red-500">Mensal</h1>
                   <div className="flex items-center justify-center p-5 border border-gray-400 rounded-lg my-5">
                     <span className="text-lg text-gray-400">R$</span>
-                    <h2 className="text-3xl font-bold text-red-500">00,00</h2>
+                    <h2 className="text-3xl font-bold text-red-500">57,99</h2>
                     <span className="text-lg text-gray-400">/mês</span>
                   </div>
                   <div>
-                    <button className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg">
+                    <button
+                      onClick={() =>
+                        router.push('https://pay.kiwify.com.br/Ng8dZ9F')
+                      }
+                      className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg"
+                    >
                       Assinar
                     </button>
                   </div>
@@ -146,11 +158,16 @@ const Home: NextPage = () => {
                   </h1>
                   <div className="flex items-center justify-center p-5 border border-gray-400 rounded-lg my-5">
                     <span className="text-lg text-gray-400">R$</span>
-                    <h2 className="text-3xl font-bold text-red-500">00,00</h2>
+                    <h2 className="text-3xl font-bold text-red-500">171,99</h2>
                     <span className="text-lg text-gray-400">/trimestre</span>
                   </div>
                   <div>
-                    <button className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg">
+                    <button
+                      onClick={() =>
+                        router.push('https://pay.kiwify.com.br/TAAxTLl')
+                      }
+                      className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg"
+                    >
                       Assinar
                     </button>
                   </div>
@@ -166,11 +183,16 @@ const Home: NextPage = () => {
                   <h1 className="text-2xl font-bold text-red-500">Anual</h1>
                   <div className="flex items-center justify-center p-5 border border-gray-400 rounded-lg my-5">
                     <span className="text-lg text-gray-400">R$</span>
-                    <h2 className="text-3xl font-bold text-red-500">00,00</h2>
+                    <h2 className="text-3xl font-bold text-red-500">627,99</h2>
                     <span className="text-lg text-gray-400">/ano</span>
                   </div>
                   <div>
-                    <button className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg">
+                    <button
+                      onClick={() => {
+                        router.push('https://pay.kiwify.com.br/TpUtRBf')
+                      }}
+                      className="my-5 py-4 px-5 bg-red-500 rounded-lg text-white uppercase font-bold text-lg"
+                    >
                       Assinar
                     </button>
                   </div>
@@ -186,7 +208,7 @@ const Home: NextPage = () => {
                   <h1 className="text-2xl font-bold text-red-500">Lifetime</h1>
                   <div className="flex items-center justify-center p-5 border border-gray-400 rounded-lg my-5">
                     <span className="text-lg text-gray-400">R$</span>
-                    <h2 className="text-3xl font-bold text-red-500">00,00</h2>
+                    <h2 className="text-3xl font-bold text-red-500">1359,99</h2>
                     <span className="text-lg text-gray-400">/eterno</span>
                   </div>
                   <div>
@@ -208,60 +230,13 @@ const Home: NextPage = () => {
               </h1>
               <Slider {...settingsSecond} className="gap-5">
                 <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
-                  <h1 className="text-2xl font-bold text-red-500">Nome</h1>
+                  <h1 className="text-2xl font-bold text-red-500">
+                    Victor Moreira
+                  </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, eum accusamus quae fugiat pariatur earum hic tenetur
-                    temporibus tempore modi repudiandae quaerat! Dolor, ad
-                    possimus ea facilis vel consectetur sed!
-                  </p>
-                  <div className="flex gap-2 text-yellow-500 mt-5">
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                  </div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
-                  <h1 className="text-2xl font-bold text-red-500">Nome</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, eum accusamus quae fugiat pariatur earum hic tenetur
-                    temporibus tempore modi repudiandae quaerat! Dolor, ad
-                    possimus ea facilis vel consectetur sed!
-                  </p>
-                  <div className="flex gap-2 text-yellow-500 mt-5">
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                  </div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
-                  <h1 className="text-2xl font-bold text-red-500">Nome</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, eum accusamus quae fugiat pariatur earum hic tenetur
-                    temporibus tempore modi repudiandae quaerat! Dolor, ad
-                    possimus ea facilis vel consectetur sed!
-                  </p>
-                  <div className="flex gap-2 text-yellow-500 mt-5">
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                    <Star size={30} weight="fill" />
-                  </div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
-                  <h1 className="text-2xl font-bold text-red-500">Nome</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, eum accusamus quae fugiat pariatur earum hic tenetur
-                    temporibus tempore modi repudiandae quaerat! Dolor, ad
-                    possimus ea facilis vel consectetur sed!
+                    Os resultados desse robô são incríveis, usando o BlazeNaAlta
+                    eu consegui recuperar meu investimento em 1 dia e em 3 dias
+                    eu já tinha triplicado meu investimento inicial.
                   </p>
                   <div className="flex gap-2 text-yellow-500 mt-5">
                     <Star size={30} weight="fill" />
@@ -273,13 +248,63 @@ const Home: NextPage = () => {
                 </div>
                 <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
                   <h1 className="text-2xl font-bold text-red-500">
-                    Noasdasdme
+                    Lucas Pereira
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Beatae, eum accusamus quae fugiat pariatur earum hic tenetur
-                    temporibus tempore modi repudiandae quaerat! Dolor, ad
-                    possimus ea facilis vel consectetur sed!
+                    Com o BlazeNaAlta eu consegui ganhar muito dinheiro, pelo
+                    menos comigo eu nunca tive nenhum prejuízo, sem contar que o
+                    suporte é impecável!!!
+                  </p>
+                  <div className="flex gap-2 text-yellow-500 mt-5">
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                  </div>
+                </div>
+                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
+                  <h1 className="text-2xl font-bold text-red-500">
+                    Arthur Souza
+                  </h1>
+                  <p>
+                    O suporte do pessoal é incrível, além de tudo, é muito
+                    simples de usar e dá muito retorno, se eu tivesse que dar
+                    uma nota seria 1000/10!!!!!
+                  </p>
+                  <div className="flex gap-2 text-yellow-500 mt-5">
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                  </div>
+                </div>
+                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
+                  <h1 className="text-2xl font-bold text-red-500">
+                    Wesley Dos Santos
+                  </h1>
+                  <p>
+                    Com pouco investimento hoje eu tenho dinheiro pra comprar
+                    tudo que eu quero, o pessoal da BlazeNaAlta me ajudou muito
+                    nessa jornada, simplesmente 10/10!
+                  </p>
+                  <div className="flex gap-2 text-yellow-500 mt-5">
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                    <Star size={30} weight="fill" />
+                  </div>
+                </div>
+                <div className="bg-gray-700 rounded-lg p-10 w-[90%]">
+                  <h1 className="text-2xl font-bold text-red-500">
+                    Evandro Silva
+                  </h1>
+                  <p>
+                    Realmente impressionante, no início eu não acreditava, mas
+                    depois que comecei a ganhar dinheiro com isso foi incrível,
+                    e o suporte do pessoal é top.
                   </p>
                   <div className="flex gap-2 text-yellow-500 mt-5">
                     <Star size={30} weight="fill" />
