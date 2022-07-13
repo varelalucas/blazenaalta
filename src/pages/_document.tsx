@@ -35,7 +35,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Blaze Na Alta" />
           <meta
             property="og:description"
-            content="Nós somos a AtomCodes, um time de desenvolvimento focado em sites e sempre trazendo o que há de mais novo em tecnologias para os nossos clientes."
+            content="Nós somos a Blaze Na Alta, uma equipe de desenvolvimento focado em cassinos e apostas trazendo o que há de mais novo em tecnologias para os nossos clientes lucrarem apostando."
           />
           <meta property="og:url" content="https://blazenaalta.com/" />
           <meta property="og:type" content="website" />
@@ -43,13 +43,14 @@ class MyDocument extends Document {
           <meta property="og:image" content="/logo.png" />
           <meta property="twitter:image" content="/logo.png" />
           <meta property="twitter:card" content="summary" />
+          <meta name="theme-color" content="#FF0C36" />
           <meta
             name="abstract"
-            content="Nós somos a AtomCodes, um time de desenvolvimento focado em sites e sempre trazendo o que há de mais novo em tecnologias para os nossos clientes."
+            content="Nós somos a Blaze Na Alta, uma equipe de desenvolvimento focado em cassinos e apostas trazendo o que há de mais novo em tecnologias para os nossos clientes lucrarem apostando."
           />
           <meta
             name="description"
-            content="Nós somos a AtomCodes, um time de desenvolvimento focado em sites e sempre trazendo o que há de mais novo em tecnologias para os nossos clientes."
+            content="Nós somos a Blaze Na Alta, uma equipe de desenvolvimento focado em cassinos e apostas trazendo o que há de mais novo em tecnologias para os nossos clientes lucrarem apostando."
           />
           <link rel="shortcut icon" href="/logo.png" />
           <link

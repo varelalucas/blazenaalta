@@ -10,20 +10,75 @@ const Home: NextPage = () => {
 
   const settingsFirst = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    margin: 10
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
   }
 
   const settingsSecond = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
-    margin: 10
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
   }
 
   return (
@@ -41,8 +96,8 @@ const Home: NextPage = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M30.418 8.74131C19.5749 24.3634 3.43155 48.7695 1.61497 52.2859C-0.670595 56.7116 -0.516995 63.3267 1.9918 68.5091C3.17248 70.9483 8.99802 77.59 15.5598 83.9777C34.6083 102.521 40.3764 102.405 60.0106 83.0837C71.0002 72.2682 74.6589 66.6966 74.6958 60.7175C74.7163 57.4653 62.5112 21.9274 61.3623 21.8925C61.0807 21.8833 59.5406 23.9498 57.9401 26.4831C56.3396 29.0165 54.8814 31.0891 54.6981 31.0891C54.5158 31.0891 50.8356 24.2928 46.5204 15.9851C42.2053 7.67737 38.3069 0.501177 37.8595 0.0373049C37.4109 -0.426567 34.0625 3.49023 30.418 8.74131ZM53.3792 44.1922C69.7622 60.5752 69.7929 60.0458 51.4285 77.5193C42.8566 85.6765 39.2828 88.4331 37.284 88.4331C35.3681 88.4331 32.2305 86.2202 26.2258 80.6353C11.4187 66.8615 9.1383 64.1029 9.1383 59.9649C9.1383 56.6143 10.2596 55.15 21.2174 44.1922C32.5193 32.8903 33.5535 32.1131 37.2983 32.1131C41.0431 32.1131 42.0773 32.8903 53.3792 44.1922ZM33.7143 43.3771C31.1635 45.9279 31.099 48.6906 33.5392 50.8984C35.9958 53.1215 39.1282 53.0488 41.2356 50.7202C43.5959 48.1131 43.3491 44.8107 40.654 42.9235C37.6465 40.8161 36.1791 40.9123 33.7143 43.3771ZM19.8289 57.1509C17.7901 60.2629 18.6932 63.5888 21.9854 65.089C27.257 67.4902 32.1179 60.3581 28.0096 56.2498C25.5899 53.8311 21.7253 54.2571 19.8289 57.1509ZM46.5317 56.3061C44.0669 58.7709 44.9752 62.999 48.3657 64.8483C51.1203 66.3505 51.3455 66.2983 53.7048 63.5878C56.2925 60.6141 56.1788 58.2056 53.3434 55.9211C51.1663 54.167 48.5213 54.3165 46.5317 56.3061ZM35.025 68.0422C31.8803 69.2126 30.9147 73.6168 33.2392 76.186C35.5831 78.7757 39.0412 78.745 41.422 76.1144C45.1247 72.0225 40.3877 66.0454 35.025 68.0422Z"
               fill="#FF0C36"
             />
@@ -56,12 +111,12 @@ const Home: NextPage = () => {
             />
           </svg>
         </nav>
-        <div className="max-w-[1013px] mx-auto w-full bg-gray-700 rounded-lg overflow-hidden">
+        <div className="container px-5 mx-auto w-full flex items-center justify-center">
           <iframe
             src="https://www.youtube.com/embed/sSkJTRYcIPE"
             title="YouTube video player"
             frameBorder="0"
-            className="w-full aspect-video"
+            className="w-full max-w-[1013px] aspect-video rounded-lg overflow-hidden"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
@@ -75,14 +130,14 @@ const Home: NextPage = () => {
         >
           <path
             fill="#111111"
-            fill-opacity="1"
+            fillOpacity="1"
             d="M0,96L1440,256L1440,320L0,320Z"
           ></path>
         </svg>
         <div className="bg-gray-800 pb-[100px]">
           <section>
-            <div className="container mx-auto">
-              <div className="grid grid-cols-3 gap-5">
+            <div className="container mx-auto px-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div className="bg-gray-700 p-7 rounded-lg">
                   <h1 className="font-bold text-2xl text-red-500">
                     Operações que geram resultados diários
